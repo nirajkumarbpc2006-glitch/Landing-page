@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusTech Innovations | Next-Gen Enterprise IT Solutions</title>
+    <meta name="description" content="Empowering global enterprises with cutting-edge Cloud Architecture, Cybersecurity, AI Automation, and Custom Software Engineering.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    <!-- Background Canvas for Interactive Particle Grid -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Top Floating Announcement Bar -->
+    <div class="announcement-bar">
+        <p><span class="badge">NEW</span> NexusTech recognized as a Top Cloud Transformation Leader 2026! <a href="#contact">Schedule a Free Strategy Call &rarr;</a></p>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-microchip"></i></div>
+                <span class="logo-text">Nexus<span>Tech</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#why-us" class="nav-link">Why Choose Us</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-cta-btn">Get Started</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <i class="fa-solid fa-bolt"></i> Future-Proof IT & Digital Engineering
+                    </div>
+                    <h1 class="hero-title">
+                        Transforming Complexity Into <span class="gradient-text">Intelligent Digital Solutions</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        We engineer scalable cloud platforms, intelligent AI automations, cybersecurity shields, and modern digital ecosystems for forward-thinking enterprises.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Explore Solutions</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline">
+                            <i class="fa-solid fa-play"></i>
+                            <span>View Case Studies</span>
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <p>Trusted by 250+ Global Enterprises & Scale-ups</p>
+                        <div class="trust-logos">
+                            <span><i class="fa-brands fa-aws"></i> AWS Partner</span>
+                            <span><i class="fa-brands fa-microsoft"></i> Azure Gold</span>
+                            <span><i class="fa-brands fa-google"></i> Cloud Certified</span>
+                            <span><i class="fa-brands fa-docker"></i> DevOps Pro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="tech-card-orb">
+                        <div class="floating-tech-card ftc-1">
+                            <div class="ftc-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="ftc-info">
+                                <h4>99.99% Uptime</h4>
+                                <p>Enterprise SLA</p>
+                            </div>
+                        </div>
+                        <div class="floating-tech-card ftc-2">
+                            <div class="ftc-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="ftc-info">
+                                <h4>AI Cloud Engine</h4>
+                                <p>Automated Ops</p>
+                            </div>
+                        </div>
+                        <div class="floating-tech-card ftc-3">
+                            <div class="ftc-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+                            <div class="ftc-info">
+                                <h4>3.8x Faster</h4>
+                                <p>Time to Market</p>
+                            </div>
+                        </div>
+                        <div class="core-cube">
+                            <div class="cube-inner">
+                                <i class="fa-solid fa-cubes"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="99.99" data-suffix="%">0%</div>
+                        <div class="stat-label">System Availability</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="350" data-suffix="+">0+</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="45" data-suffix="M+">0M+</div>
+                        <div class="stat-label">User Interactions Handled</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="98" data-suffix="%">0%</div>
+                        <div class="stat-label">Client Retention Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual">
+                        <div class="about-card-stack">
+                            <div class="main-about-img">
+                                <div class="mockup-header">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                    <span class="mockup-title">nexus-sys-terminal.sh</span>
+                                </div>
+                                <div class="code-terminal">
+                                    <code>
+                                        <span class="code-comment">// Initializing Enterprise Infrastructure</span><br>
+                                        <span class="code-kw">const</span> cluster = <span class="code-kw">await</span> NexusCloud.deploy({<br>
+                                        &nbsp;&nbsp;architecture: <span class="code-str">"Zero-Trust Microservices"</span>,<br>
+                                        &nbsp;&nbsp;scalability: <span class="code-str">"Elastic Auto-Heal"</span>,<br>
+                                        &nbsp;&nbsp;securityGrade: <span class="code-str">"Gov-Grade Encryption"</span><br>
+                                        });<br>
+                                        <span class="code-func">cluster.start()</span>; <span class="code-comment">// Status: OK 200</span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="experience-badge">
+                                <h3>12+</h3>
+                                <p>Years of Pioneering IT Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <div class="section-tag">ABOUT NEXUSTECH</div>
+                        <h2 class="section-title">Architecting The Digital Future for Tomorrow's Leaders</h2>
+                        <p class="section-desc">
+                            Founded on a mission to demystify complex technologies, NexusTech Innovations delivers high-impact IT consulting, infrastructure modernization, and bespoke software solutions. We bridge the gap between legacy friction and cloud-native velocity.
+                        </p>
+                        <div class="about-features">
+                            <div class="about-feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-network-wired"></i></div>
+                                <div>
+                                    <h4>Agile Architecture</h4>
+                                    <p>Modular, highly maintainable systems tailored to withstand rapid scale.</p>
+                                </div>
+                            </div>
+                            <div class="about-feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+                                <div>
+                                    <h4>Zero-Trust Security</h4>
+                                    <p>Comprehensive security posture assessments and resilient defense protocols.</p>
+                                </div>
+                            </div>
+                            <div class="about-feature-item">
+                                <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                                <div>
+                                    <h4>24/7 Managed NOC & SOC</h4>
+                                    <p>Proactive monitoring, incident response, and continuous reliability engineering.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">OUR CORE CAPABILITIES</div>
+                    <h2 class="section-title">End-to-End Enterprise IT Services</h2>
+                    <p class="section-desc">From strategy to deployment and continuous optimization, we accelerate your technical capabilities across the entire lifecycle.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <h3>Cloud Infrastructure & Migration</h3>
+                        <p>Architecting multi-cloud and hybrid environments on AWS, Azure, and GCP with automated disaster recovery and cost governance.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Kubernetes & Containerization</li>
+                            <li><i class="fa-solid fa-check"></i> Serverless Microservices</li>
+                            <li><i class="fa-solid fa-check"></i> FinOps Cloud Cost Reduction</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class="service-card highlighted-card">
+                        <div class="popular-badge">POPULAR</div>
+                        <div class="service-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                        <h3>Cybersecurity & Compliance</h3>
+                        <p>Robust enterprise defense encompassing penetration testing, SIEM deployment, SOC 2, HIPAA, and ISO 27001 readiness.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Threat Intelligence & Hunting</li>
+                            <li><i class="fa-solid fa-check"></i> Zero-Trust IAM Solutions</li>
+                            <li><i class="fa-solid fa-check"></i> Vulnerability Management</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Custom Software Engineering</h3>
+                        <p>High-performance web apps, mobile solutions, and enterprise APIs crafted with modern frameworks like React, Node.js, and Java.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Full-Stack Web Development</li>
+                            <li><i class="fa-solid fa-check"></i> Scalable REST & GraphQL APIs</li>
+                            <li><i class="fa-solid fa-check"></i> Legacy Modernization</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>AI & Intelligent Automation</h3>
+                        <p>Integrate Large Language Models, machine learning pipelines, and RPA workflows to automate redundant business operations.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Custom GenAI Solutions</li>
+                            <li><i class="fa-solid fa-check"></i> Predictive Data Analytics</li>
+                            <li><i class="fa-solid fa-check"></i> Robotic Process Automation</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-infinity"></i></div>
+                        <h3>DevOps & CI/CD Pipeline</h3>
+                        <p>Accelerate release cycles and eliminate deployment bottlenecks with infrastructure-as-code and automated testing suites.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Terraform & Ansible IaC</li>
+                            <li><i class="fa-solid fa-check"></i> GitOps Automated Pipelines</li>
+                            <li><i class="fa-solid fa-check"></i> Observability & Grafana/Prometheus</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3>IT Consulting & Strategy</h3>
+                        <p>Strategic technology roadmaps, IT budget optimization, architecture audits, and Virtual CTO leadership for growth-stage ventures.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Enterprise Architecture Roadmaps</li>
+                            <li><i class="fa-solid fa-check"></i> Tech Stack Due Diligence</li>
+                            <li><i class="fa-solid fa-check"></i> Fractional CTO Advisory</li>
+                        </ul>
+                        <a href="#contact" class="service-link">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-us-section" id="why-us">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">THE NEXUSTECH ADVANTAGE</div>
+                    <h2 class="section-title">Why Industry Leaders Partner With Us</h2>
+                    <p class="section-desc">We combine engineering rigor, cutting-edge tooling, and rapid execution to deliver measurable business ROI.</p>
+                </div>
+
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-number">01</div>
+                        <h3>Battle-Tested Engineering</h3>
+                        <p>Our senior architects have architected distributed systems handling millions of concurrent users without breaking a sweat.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">02</div>
+                        <h3>Transparent Collaboration</h3>
+                        <p>Real-time Jira/Slack dashboards, weekly sprints, and clear deliverables with zero hidden costs or vendor lock-ins.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">03</div>
+                        <h3>Relentless Security Mindset</h3>
+                        <p>Security is not an afterthought; we implement DevSecOps from Day 1 with strict compliance safeguards.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-number">04</div>
+                        <h3>Rapid Deployment & Time-To-Value</h3>
+                        <p>Our modular accelerators and pre-built IaC templates reduce initial deployment timeframes by over 50%.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Case Studies Section -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">PROVEN IMPACT</div>
+                    <h2 class="section-title">Featured Enterprise Case Studies</h2>
+                    <p class="section-desc">Explore how our engineering teams solved complex technical hurdles for global clients.</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+                    <button class="filter-btn" data-filter="ai">AI & Automation</button>
+                    <button class="filter-btn" data-filter="security">Cybersecurity</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-card" data-category="cloud">
+                        <div class="portfolio-thumb">
+                            <div class="portfolio-badge">Cloud Architecture</div>
+                            <div class="thumb-art art-cloud"><i class="fa-solid fa-cloud-bolt"></i></div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>FinTech Global Cloud Migration</h3>
+                            <p>Migrated banking core infrastructure to AWS multi-region serverless architecture with zero downtime during peak trading hours.</p>
+                            <div class="tags">
+                                <span>AWS</span>
+                                <span>Kubernetes</span>
+                                <span>Terraform</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card" data-category="ai">
+                        <div class="portfolio-thumb">
+                            <div class="portfolio-badge">AI Automation</div>
+                            <div class="thumb-art art-ai"><i class="fa-solid fa-brain"></i></div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Omnichannel Support LLM Engine</h3>
+                            <p>Built a context-aware customer intelligence bot resolving 68% of tier-1 support tickets automatically in 14 languages.</p>
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>OpenAI API</span>
+                                <span>Vector DB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card" data-category="security">
+                        <div class="portfolio-thumb">
+                            <div class="portfolio-badge">Cybersecurity</div>
+                            <div class="thumb-art art-sec"><i class="fa-solid fa-shield-cat"></i></div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Zero-Trust Healthcare Perimeter</h3>
+                            <p>Implemented end-to-end HIPAA compliance and automated threat isolation across 42 hospitals and 15,000 workstations.</p>
+                            <div class="tags">
+                                <span>Zero-Trust</span>
+                                <span>SIEM</span>
+                                <span>IAM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag">TESTIMONIALS</div>
+                    <h2 class="section-title">What Our Clients Say</h2>
+                    <p class="section-desc">Discover how we helped technical leaders transform their business operations.</p>
+                </div>
+
+                <div class="testimonial-slider">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="quote">"NexusTech overhauled our legacy monolithic architecture in under 4 months. Our system latency dropped by 60%, and our cloud spend was reduced by $180k annually. Outstanding execution!"</p>
+                            <div class="client-info">
+                                <div class="client-avatar">EM</div>
+                                <div>
+                                    <h4>Elena Martinez</h4>
+                                    <span>CTO at FinVantage Global</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="quote">"Their DevSecOps team is the best we've ever worked with. They automated our entire compliance audit process and provided round-the-clock peace of mind."</p>
+                            <div class="client-info">
+                                <div class="client-avatar">DK</div>
+                                <div>
+                                    <h4>David Kim</h4>
+                                    <span>VP of Engineering, HealthPulse</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="stars">★★★★★</div>
+                            <p class="quote">"The AI pipeline engineered by NexusTech revolutionized our automated customer onboarding. Professional, communicative, and technically brilliant."</p>
+                            <div class="client-info">
+                                <div class="client-avatar">SR</div>
+                                <div>
+                                    <h4>Sarah Richardson</h4>
+                                    <span>Head of Product, Apex Retail</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button class="slide-btn" id="prevSlide" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+                        <div class="slide-dots" id="slideDots"></div>
+                        <button class="slide-btn" id="nextSlide" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA & Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-card-wrapper">
+                    <div class="contact-info">
+                        <div class="section-tag">LET'S CONNECT</div>
+                        <h2>Ready to Accelerate Your Digital Transformation?</h2>
+                        <p>Speak directly with our senior solutions architect. We'll evaluate your current architecture and provide an actionable blueprint.</p>
+                        
+                        <div class="contact-details">
+                            <div class="c-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <h5>Email Our Team</h5>
+                                    <p>solutions@nexustech-innovations.io</p>
+                                </div>
+                            </div>
+                            <div class="c-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h5>Direct Helpline</h5>
+                                    <p>+1 (800) 555-NEXUS</p>
+                                </div>
+                            </div>
+                            <div class="c-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h5>Headquarters</h5>
+                                    <p>Innovation Tower, Silicon Valley, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <h3>Request an Architecture Audit</h3>
+                            
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" placeholder="e.g. Alexander Wright" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="workEmail">Business Email</label>
+                                <input type="email" id="workEmail" placeholder="alex@company.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="serviceInterest">Primary Service of Interest</label>
+                                <select id="serviceInterest" required>
+                                    <option value="" disabled selected>Select a solution area</option>
+                                    <option value="cloud">Cloud Infrastructure & Migration</option>
+                                    <option value="security">Cybersecurity & Compliance</option>
+                                    <option value="software">Custom Software Engineering</option>
+                                    <option value="ai">AI & Intelligent Automation</option>
+                                    <option value="devops">DevOps & CI/CD Pipelines</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectDetails">Project Overview & Goals</label>
+                                <textarea id="projectDetails" rows="4" placeholder="Briefly describe your objectives, timeline, or current challenges..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Send Consultation Request</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            <div id="formFeedback" class="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <span class="logo-text">Nexus<span>Tech</span></span>
+                    </a>
+                    <p>Empowering forward-thinking companies through resilient cloud systems, cutting-edge AI, and enterprise-grade software engineering.</p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://discord.com" target="_blank" rel="noopener" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#services">Cloud Engineering</a></li>
+                        <li><a href="#services">Cybersecurity Ops</a></li>
+                        <li><a href="#services">AI Automation</a></li>
+                        <li><a href="#services">DevOps Integration</a></li>
+                        <li><a href="#services">IT Strategy & Audits</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Our Mission</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#portfolio">Case Studies</a></li>
+                        <li><a href="#testimonials">Client Reviews</a></li>
+                        <li><a href="../index.html">Main Project Hub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h4>Stay Ahead in Tech</h4>
+                    <p>Subscribe to our monthly Tech Radar bulletin for enterprise insights and security alerts.</p>
+                    <form id="newsletterForm" class="newsletter-form">
+                        <input type="email" placeholder="Your work email" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexusTech Innovations Inc. Crafted for Task 1 Submission by Niraj Kumar.</p>
+                <div class="footer-sub-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security Statement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" title="Back to top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
